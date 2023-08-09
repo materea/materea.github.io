@@ -1,5 +1,5 @@
-const words = ["I am", "You are", "We are", "Joining us is",],
-  colors = ["blue", "green", "yellow", "red"],
+const words = ["I am", "You are", "We are",],
+  colors = ["blue", "green", "yellow",],
   text = document.querySelector(".text");
 
 // Generator (iterate from 0-3)
@@ -8,7 +8,7 @@ function* generator() {
   while (true) {
     yield index++;
 
-    if (index > 3) {
+    if (index > 2) {
       index = 0;
     }
   }
