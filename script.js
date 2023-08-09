@@ -1,4 +1,4 @@
-const words = ["I am", "You are", "We are", "Our collective effort is",],
+const words = ["I am", "You are", "We are", "Working together is",],
   colors = ["blue", "green", "yellow", "red"],
   text = document.querySelector(".text");
 
