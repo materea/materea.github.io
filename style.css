@@ -78,6 +78,7 @@ div.info p{
 div.info a {
   text-decoration: none;
   color: #4480ff;
+  text-align: center;
 }
 
 @keyframes blink {
