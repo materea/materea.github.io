@@ -71,6 +71,10 @@ div.info {
   color: #747474;
   text-align: center;
 }
+
+div.info p{
+  text-align: center;
+}
 div.info a {
   text-decoration: none;
   color: #4480ff;
