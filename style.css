@@ -65,12 +65,12 @@ h1 .red {
   color: #f44336;
 }
 
-p.info {
+div.info {
   font-size: 12px;
   margin-top: 6rem;
   color: #747474;
 }
-p.info a {
+div.info a {
   text-decoration: none;
   color: #4480ff;
 }
