@@ -69,6 +69,7 @@ div.info {
   font-size: 12px;
   margin-top: 6rem;
   color: #747474;
+  text-align: center;
 }
 div.info a {
   text-decoration: none;
