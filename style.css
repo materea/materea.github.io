@@ -193,3 +193,9 @@ body.dark-mode {
 .dark-mode h1 {
   color: var(--color-darker-dark);
 }
+
+.dark-mode .info a {
+  text-decoration: none;
+  color: var(--color-darker-dark);
+  text-align: center;
+}
