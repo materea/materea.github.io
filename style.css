@@ -97,10 +97,14 @@ div.info {
 
 div.info p{
   text-align: center;
+  background-color: var(--color-ash-dark);
+  padding: 7px;
+  border-radius: 7px;
 }
+
 div.info a {
   text-decoration: none;
-  color: #4480ff;
+  color: var(--color-primary);
   text-align: center;
 }
 
@@ -198,4 +202,11 @@ body.dark-mode {
   text-decoration: none;
   color: var(--color-darker-dark);
   text-align: center;
+}
+
+.dark-mode .info p{
+  text-align: center;
+  background-color: var(--color-darker);
+  padding: 7px;
+  border-radius: 7px;
 }
