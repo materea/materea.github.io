@@ -98,8 +98,10 @@ div.info {
 div.info p{
   text-align: center;
   background-color: var(--color-ash-dark);
-  padding: 7px;
+  padding: 10px;
   border-radius: 7px;
+  width: 15rem;
+  margin: 10px auto;
 }
 
 div.info a {
@@ -187,10 +189,14 @@ input[type="checkbox"] {
 }
 
 
+.container {
+width: 80%;
+}
+
+
 /*                        buttons          */
 
 .btn {
-  padding: 0 8%;
   margin-right: auto;
 }
 
@@ -199,7 +205,7 @@ input[type="checkbox"] {
   margin: 15px 0;
   color:#fff;
   border:none;
-  padding:10px 30px;
+  padding:8px 15px;
   border-radius:7px;
   font-weight: 500;
   font-family: var(--font-family-primary);
@@ -246,6 +252,9 @@ body.dark-mode {
 
 
 .dark-mode .flat-btn{
-  background: var(--color-red);
-  color: var(--color-darker-dark);
+  background: var(--color-darker-dark);
+}
+
+.dark-mode .flat-btn a{
+  color: var(--color-darker);
 }
