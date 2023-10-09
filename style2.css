@@ -219,6 +219,11 @@ width: 80%;
   text-decoration: none;
 }
 
+.flat-btn:hover{
+  color: var(--color-darker);
+  background: var(--color-secondary);
+}
+
 
 
 .flat-btn:active{
@@ -258,3 +263,14 @@ body.dark-mode {
 .dark-mode .flat-btn a{
   color: var(--color-darker);
 }
+
+.dark-mode .flat-btn:hover{
+  background: var(--color-ash-dark);
+}
+
+
+
+.dark-mode .flat-btn:active{
+  background: var(--color-ash-dark);
+}
+
