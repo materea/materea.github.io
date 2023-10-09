@@ -187,6 +187,39 @@ input[type="checkbox"] {
 }
 
 
+/*                        buttons          */
+
+.btn {
+  padding: 0 8%;
+  margin-right: auto;
+}
+
+.flat-btn {
+  background: var(--color-darker);
+  margin: 15px 0;
+  color:#fff;
+  border:none;
+  padding:10px 30px;
+  border-radius:7px;
+  font-weight: 500;
+  font-family: var(--font-family-primary);
+  transition:all 200ms ease-out;
+  display: inline-block;
+  width: 10rem;
+}
+
+.flat-btn a{
+  color:#fff;
+  text-decoration: none;
+}
+
+
+
+.flat-btn:active{
+  color: var(--color-darker);
+  background: var(--color-secondary);
+}
+
 
 /* Dark Mode Styles */
 body.dark-mode {
@@ -209,4 +242,10 @@ body.dark-mode {
   background-color: var(--color-darker);
   padding: 7px;
   border-radius: 7px;
+}
+
+
+.dark-mode .flat-btn{
+  background: var(--color-red);
+  color: var(--color-darker-dark);
 }
