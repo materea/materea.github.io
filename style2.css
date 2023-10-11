@@ -260,7 +260,7 @@ body.dark-mode {
   background: var(--color-darker-dark);
 }
 
-.dark-mode .flat-btn a{
+.dark-mode .flat-btn {
   color: var(--color-darker);
 }
 
