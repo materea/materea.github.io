@@ -205,13 +205,13 @@ width: 80%;
   margin: 15px 0;
   color:#fff;
   border:none;
-  padding:8px 15px;
-  border-radius:7px;
+  padding:10px 10px;
+  border-radius:20px;
   font-weight: 500;
   font-family: var(--font-family-primary);
   transition:all 200ms ease-out;
   display: inline-block;
-  width: 10rem;
+  width: 9rem;
 }
 
 .flat-btn a{
@@ -257,7 +257,7 @@ body.dark-mode {
 
 
 .dark-mode .flat-btn{
-  background: var(--color-darker-dark);
+  background: var(--color-red);
 }
 
 .dark-mode .flat-btn {
@@ -265,7 +265,7 @@ body.dark-mode {
 }
 
 .dark-mode .flat-btn:hover{
-  background: var(--color-ash-dark);
+  background: var(--color-green);
 }
 
 
