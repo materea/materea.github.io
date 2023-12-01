@@ -186,7 +186,6 @@ width: 80%;
   border:none;
   padding:10px 10px;
   border-radius:20px;
-  font-weight: 500;
   font-family: var(--font-family-primary);
   transition:all 200ms ease-out;
   display: inline-block;
@@ -262,16 +261,16 @@ body.dark-mode {
 
 
 .dark-mode .flat-btn{
-  background: var(--color-ash);
+  background: var(--color-darker);
 }
 
 .dark-mode .flat-btn {
-  color: var(--color-darker);
+  color: var(--color-primary);
 }
 
 .dark-mode .flat-btn:hover{
-  background: var(--color-primary-dark);
-  color: var(--color-primary);
+  background: var(--color-ash);
+  color: var(--color-darker);
 }
 
 
