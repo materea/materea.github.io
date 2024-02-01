@@ -3,13 +3,19 @@
 :root {
   --color-primary: #fff;
   --color-darker: #001028;
+  --color-darker-alpha: rgba(0, 16, 40, 0.506);
   --color-yellow: #f4b400;
   --color-green: #4caf50;
   --color-red: #f44336;
   --color-secondary: #57a2f8;
+  --color-secondary-lighter: #f4f4f4;
+  --color-secondary-alpha: #57a2f85f;
   --color-ash: #747474;
-  --font-family-primary: 'Poppins', sans-serif;
+  --font-family-primary: 'Open Sans', sans-serif;
   --font-family-secondary: 'Rubik Mono One', sans-serif;
+  --font-family-tertiary: 'Georgia', sans-serif;
+  --font-family-quartenary: 'Poppins', sans-serif;
+
   --td: 150ms;
   --te: cubic-bezier(0.215, 0.61, 0.355, 1);
 
@@ -20,7 +26,6 @@
     --color-secondary-dark: #152840;
     --color-tertiary-dark: #7b8da6;
 }
-
 
 body {
   margin: 0;
@@ -168,9 +173,7 @@ input[type="checkbox"] {
 }
 
 
-.container {
-width: 80%;
-}
+
 
 
 /*                        buttons          */
@@ -181,7 +184,6 @@ width: 80%;
 
 .flat-btn {
   background: var(--color-darker);
-  margin: 15px 0;
   color:#fff;
   border:none;
   padding:10px 10px;
@@ -247,6 +249,236 @@ div.posting a:active{
   background: var(--color-ash-dark);
 }
 
+
+
+#text-container {
+  margin: 2rem auto ;
+  filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+
+  font-family: var(--font-family-secondary);
+  font-size: 3rem;
+  color: var(--color-darker);
+  text-align: center;
+  /* background-color: var(--color-darker-dark); */
+  padding: 1rem;
+  user-select: none;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.container{
+  position: relative;
+  width: 95%;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+
+.over-hide{
+  overflow: hidden;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--color-darker-dark);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url('./img/commhealth-copy.png');
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkbox.scnd + label{
+  background-image: url('./img/obgyn-copy.png');
+}
+.checkbox.thrd + label{
+  background-image: url('./img/doctor.png');
+}
+.checkbox.foth + label{
+  background-image: url('./img/anesthesiology.png');
+}
+.checkbox.fifth + label{
+  background-image: url('./img/internal-medicine-copy.jpg');
+}
+.checkbox.sixth + label{
+  background-image: url('./img/ms.png');
+}
+
+.checkbox:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.slider-height-padding {
+  padding-top: 440px;
+}
+
+.section ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.section ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid var(--color-darker-dark);
+  background-size: cover;
+  background-position: center;
+  background-image: url('./img/commhealth-copy.png');
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: var(--color-secondary);
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.section ul li span {
+  mix-blend-mode: difference;
+}
+.section ul li:nth-child(2) {
+  background-image: url('./img/obgyn-copy.png');
+}
+.section ul li:nth-child(3) {
+  background-image: url('./img/doctor.png');
+}
+.section ul li:nth-child(4) {
+  background-image: url('./img/anesthesiology.png');
+}
+.section ul li:nth-child(5) {
+  background-image: url('./img/internal-medicine-copy.jpg');
+}
+.section ul li:nth-child(6) {
+  background-image: url('./img/ms.png');
+}
+
+
+.checkbox.frst:checked ~ ul li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkbox.scnd:checked ~ ul li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkbox.thrd:checked ~ ul li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkbox.foth:checked ~ ul li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkbox.fifth:checked ~ ul li:nth-child(5) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkbox.sixth:checked ~ ul li:nth-child(6) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+
+
+/* 
+@media (max-width: 767px) {
+  .slider-height-padding {
+    padding-top: 340px;
+  }
+  ul li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-height-padding {
+    padding-top: 240px;
+  }
+  ul li {
+    height: 200px;
+  }
+} */
+
+
+
+
+
+
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: var(--color-secondary-dark);
@@ -269,25 +501,25 @@ body.dark-mode {
 }
 
 .dark-mode .flat-btn:hover{
-  background: var(--color-ash);
+  background: var(--color-secondary);
   color: var(--color-darker);
 }
 
 
 
 .dark-mode .flat-btn:active{
-  background: var(--color-ash-dark);
+  background: var(--color-green);
 }
 
 
 .dark-mode .blurred-box {
-  background: #74747458;
+  background: var(--color-darker-alpha);
 }
 
 
 
 .dark-mode .posting a{
-  background-color: var(--color-ash);
+  background-color: var(--color-secondary);
   color: var(--color-primary-dark);
 }
 
@@ -299,4 +531,21 @@ body.dark-mode {
 
 .dark-mode .posting a:active{
   background: var(--color-primary-dark);
+}
+
+.dark-mode #text1,
+.dark-mode #text2 {
+  color: var(--color-secondary);
+  text-align: center;
+  /* background-color: var(--color-darker-dark); */
+
+}
+
+.dark-mode .checkbox:checked + label,
+.dark-mode .checkbox:not(:checked) + label{
+  border: 3px solid var(--color-secondary);
+}
+
+.dark-mode .section ul li {
+  border: 5px solid var(--color-secondary);
 }
