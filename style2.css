@@ -453,11 +453,9 @@ div.posting a:active{
 
 
 
-/* 
+
 @media (max-width: 767px) {
-  .slider-height-padding {
-    padding-top: 340px;
-  }
+
   ul li {
     height: 300px;
     font-size: 13px;
@@ -466,13 +464,17 @@ div.posting a:active{
 }
 
 @media (max-width: 575px) {
-  .slider-height-padding {
-    padding-top: 240px;
-  }
+
   ul li {
     height: 200px;
   }
-} */
+
+  .checkbox:checked + label,
+.checkbox:not(:checked) + label{
+  width: 30px;
+  height: 30px;
+}
+}
 
 
 
