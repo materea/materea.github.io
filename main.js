@@ -149,3 +149,4 @@ document.addEventListener("scroll", function() {
   document.getElementById("progress-bar").style.width = scrollPercentage + "%";
 });
 
+
