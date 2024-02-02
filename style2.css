@@ -509,10 +509,6 @@ body.dark-mode {
 
 
 
-.dark-mode .flat-btn:active{
-  background: var(--color-green);
-}
-
 
 .dark-mode .blurred-box {
   background: var(--color-darker-alpha);
