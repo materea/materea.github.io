@@ -517,18 +517,18 @@ body.dark-mode {
 
 
 .dark-mode .posting a{
-  background-color: var(--color-secondary);
-  color: var(--color-primary-dark);
+  background-color: var(--color-darker);
+  color: var(--color-darker-dark);
 }
 
 .dark-mode .posting a:hover{
-  background: var(--color-primary-dark);
-  color: var(--color-primary);
+  background: var(--color-secondary);
+  color: var(--color-darker);
 }
 
 
 .dark-mode .posting a:active{
-  background: var(--color-primary-dark);
+  background: var(--color-secondary);
 }
 
 .dark-mode #text1,
