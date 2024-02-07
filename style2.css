@@ -517,7 +517,7 @@ body.dark-mode {
 
 
 .dark-mode .posting a{
-  background-color: var(--color-darker);
+  background-color: var(--color-secondary-dark);
   color: var(--color-darker-dark);
 }
 
