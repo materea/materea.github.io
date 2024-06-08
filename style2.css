@@ -168,7 +168,8 @@ h1 .red {
   justify-content: center;
   font-size: 14px;
   font-weight: bold;
-  background-color: #f4f4f4;
+  color: var(--color-darker);
+  background-color: var(--color-darker-dark);
 }
 
 .homepage .course-card:hover {
@@ -247,15 +248,17 @@ input[type="checkbox"] {
 /*                        buttons          */
 
 .btn {
-  width: 40%;
-  margin: 4rem auto 1rem auto;
+  width: 20%;
+  margin: auto;
+  margin-top: 4rem;
+
 }
 
 .flat-btn {
   background: var(--color-darker);
   color:#fff;
   border:none;
-  padding:10px 10px;
+  padding:5px 10px;
   font-family: var(--font-family-primary);
   transition:all 200ms ease-out;
   display: inline-block;
@@ -266,8 +269,9 @@ input[type="checkbox"] {
 
 .flat-btn a{
   color:#fff;
-  font-size: .7rem;
   text-decoration: none;
+  font-size: .7rem;
+
 }
 
 .flat-btn:hover{
@@ -624,7 +628,7 @@ body.dark-mode {
 
 }
 
-.homepage .course-heading {
+.dark-mode .homepage .course-heading {
   color: var(--color-darker-dark);
   background-color: var(--color-darker);
 }
