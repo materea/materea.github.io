@@ -248,10 +248,9 @@ input[type="checkbox"] {
 /*                        buttons          */
 
 .btn {
-  width: 20%;
-  margin: auto;
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
   margin-top: 4rem;
-
 }
 
 .flat-btn {
@@ -264,14 +263,13 @@ input[type="checkbox"] {
   display: inline-block;
   width: 9rem;
   margin: auto;
-
+  text-align: center;
+  font-size: .7rem;
 }
 
 .flat-btn a{
   color:#fff;
   text-decoration: none;
-  font-size: .7rem;
-
 }
 
 .flat-btn:hover{
