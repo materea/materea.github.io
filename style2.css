@@ -550,7 +550,34 @@ div.posting a:active{
 }
 
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-darker);
+  font-size: 14px;
+  width: 100%;
+  padding: .2rem 0;
+}
 
+footer a {
+  text-decoration: none;
+  color: var(--color-darker-dark);
+  margin: 0 10px;
+  font-size: xx-small;
+}
+
+footer a:hover {
+  color: var(--color-ash-dark);
+
+}
+footer .separator {
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 10px;
+}
 
 
 
